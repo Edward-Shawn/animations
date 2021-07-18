@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
         }
@@ -40,9 +44,32 @@
         }
 
         main {
+            padding-top: 41px;
             display: block;
-            height: 2000px;
+            height: auto;
             background: #ccc;
+        }
+
+        section {
+            height: 500px;
+            text-align: center;
+            line-height: 500px;
+        }
+
+        section:nth-child(1) {
+            background: #aaa;
+        }
+
+        section:nth-child(2) {
+            background: rgb(240, 195, 195);
+        }
+
+        section:nth-child(3) {
+            background: rgb(225, 238, 191);
+        }
+
+        section:nth-child(4) {
+            background: rgb(174, 243, 231);
         }
     </style>
 </head>
@@ -50,14 +77,17 @@
 <body>
     <header>
         <ul>
-            <li><a href="">menu1</a></li>
-            <li><a href="">menu2</a></li>
-            <li><a href="">menu3</a></li>
-            <li><a href="">menu4</a></li>
+            <li><a href="#page1">menu1</a></li>
+            <li><a href="#page2">menu2</a></li>
+            <li><a href="#page3">menu3</a></li>
+            <li><a href="#page4">menu4</a></li>
         </ul>
     </header>
     <main>
-
+        <section id="page1">page1</section>
+        <section id="page2">page2</section>
+        <section id="page3">page3</section>
+        <section id="page4">page4</section>
     </main>
 </body>
 
